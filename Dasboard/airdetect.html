@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air Quality</title>
+    <link rel="stylesheet" href="airdetect.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-header">
+            <h1>AIR Quality</h1>
+        </div>
+        <div class="navbar-search">
+            <input type="text" placeholder="Search...">
+        </div>
+        <div class="navbar-settings">
+            <!-- <button>Settings</button> -->
+            <span class="material-symbols-outlined">
+                settings
+                </span>
+        </div>
+    </nav>
+
+    <div class="top">
+        <div class="air_index">
+            <h2>Air Quality Index</h2>
+            <h3 id="Index">Good</h3>
+            <p id="description">AQI is good today as compared to yesterday, good braetheable air with less harmful
+                Pollutant. people with respiratory problem can take an ease</p>
+
+        </div>
+    </div>
+
+
+    <div class="pollutant_detail">
+        <h2 id="heading">Pollutant Data</h2>
+        <div class="outer_wrapper">
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Parameter</th>
+                            <th>Quantity</th>
+                            <th>Level</th>
+                            <th>Time</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Temprature</td>
+                            <td>24.7°C</td>
+                            <td>Good</td>
+                            <td>12:36:04</td>
+                            
+                           
+                        </tr>
+                        <tr>
+                            <td>Humidity</td>
+                            <td>24 RH</td>
+                            <td>Good</td>
+                            <td>12:36:04</td>
+                            
+                          
+                        </tr>
+                        <tr>
+                            <td>Carbon Mono Oxide</td>
+                            <td>16</td>
+                            <td>1</td>
+                            <td>12:36:04</td>
+                            
+                          
+                        </tr>
+                        <tr>
+                            <td>Carbon Di Oxide</td>
+                            <td>16</td>
+                            <td>1</td>
+                            <td>12:36:04</td>
+                        </tr>
+                        <tr>
+                            <td>Carbon Di Oxide</td>
+                            <td>16</td>
+                            <td>1</td>
+                            <td>12:36:04</td>
+                        </tr>
+
+                        <!-- Add more rows as needed -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+<script src="airdetect.js"></script>
+
+</html>

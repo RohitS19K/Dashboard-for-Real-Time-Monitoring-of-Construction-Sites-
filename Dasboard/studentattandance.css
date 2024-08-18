@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --clr-primary: #7380ec;
+    --clr-start: #ff7782;
+    --clr-success: #41f1b6;
+    --clr-white: #fff;
+    --clr-info-dark: #7d8da1;
+    --clr-info-light: #dce1eb;
+    --clr-dark: #363949;
+    --clr-warnig: #ff4edc;
+    --clr-light: rgba(132, 139, 200, 0.18);
+    --clr-primary-variant: #111e88;
+    --clr-dark-variant: #677483;
+    --clr-color-background: #f6f6f9;
+  
+    --card-border-radius: 2rem;
+    --border-radius-1: 0.4rem;
+    --border-radius-2: 0.8rem;
+    --border-radius-3: 1.2rem;
+  
+    --card-padding: 1.8rem;
+    --padding-1: 1.2rem;
+    --box-shadow: 0 2rem 3rem var(--clr-light);
+  
+  }
+
+  *{
+    margin: 0;
+    padding: 0;
+  }
+
+  body{
+    font-family: 'poppins', sans-serif;
+    background-color: var(--clr-color-background);
+    height: fit-content;
+  }
+  
+h1{
+    font-weight: 800;
+    font-size: 1.8rem;
+  }
+  h2{
+    font-size: 1.4rem;
+  
+  }
+  h3{
+  font-size: 0.87rem;
+  }
+  h4{
+    font-size: 0.8rem;
+    color: var(--clr-dark-variant);
+  }
+  h5{
+    font-size: 0.77rem;
+  }
+  /* starting top section */
+  section{
+    background-color: var(--clr-dark);
+    justify-content: center;
+    height: 70px;
+
+  }
+  .buttons{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    position: relative;
+  }
+  .search{
+    /* line-height: ; */
+    margin-right: 6rem;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: max-content;
+}
+ td {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+    /* font-size: 1rem;; */
+}
+th {
+    background-color: #f2f2f2;
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+    position: sticky;
+    top: 0px;
+  }
+  .table-wrapper{
+    max-height: 300px;
+    overflow-y: scroll;
+    margin: 20px;
+  }
+  .outer_wrapper{
+    border: 1px solid #dddddd;
+    box-shadow: var(--box-shadow);
+    margin: 20px;
+    /* overflow-x: scroll; */
+    border-radius: 5px;
+  }
+  .outer_wrapper:hover{
+    box-shadow: none ;
+    transition: all .3s ease;
+  }

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Information</title>
+    <link rel="stylesheet" href="Weather1.css">
+    <style>
+        #map {
+            height: 500px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-header">
+            <h1>Weather Report</h1>
+        </div>
+        <div class="navbar-settings">
+            <span class="material-symbols-outlined">
+                settings
+            </span>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="info">
+            <div class="block1">
+                <video id="video-background" class="video-background" muted autoplay loop>
+                    <source src="Summer_-_Hot_Weather(2160p).webm" type="video/mp4">
+                </video>
+                <h4>Temperature</h4>
+                <p id="UNITS">Loading...</p>
+                <h3>Weather Condition</h3>
+                <p>Sector A, Slice 2, Aranya Nagar, Scheme 78, Vijay Nagar, Indore</p>
+                <p id="Time">1 hour ago</p>
+                <h4>Severe heat is expected in this area.</h4>
+            </div>
+            <div class="block2">
+                <video class="video-background" muted autoplay loop>
+                    <source src="climate cloud.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <h4>Precipitation</h4>
+                <p id="UNITS2">4%</p>
+                <h3>Dry Weather</h3>
+                <p id="Condition">Loading...</p>
+                <p>Sector A, Slice 2, Aranya Nagar, Scheme 78, Vijay Nagar, Indore</p>
+                <p id="Time">1 hour ago</p>
+                <h4>There is minimal precipitation expected this week.</h4>
+            </div>
+            <div class="block3">
+                <video class="video-background" muted autoplay loop>
+                    <source src="cloudy.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <h4>Wind</h4>
+                <p id="UNITS3">Loading...</p>
+                <h3>The weather is calm, with hardly any wind.</h3>
+                <p>Sector A, Slice 2, Aranya Nagar, Scheme 78, Vijay Nagar, Indore</p>
+                <p id="Time">1 hour ago</p>
+                <h4>The weather is calm, with hardly any wind.</h4>
+            </div>
+        </div>
+        <div class="Location">
+            <h2>Current Working Locations</h2>
+            <h1>Multiple Project</h1>
+            <div class="map" id="map"></div>
+            <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+            <script src="script.js"></script>
+        </div>
+    </div>
+</body>
+</html>

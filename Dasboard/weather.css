@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+    --clr-primary: #7380ec;
+    --clr-start: #ff7782;
+    --clr-success: #41f1b6;
+    --clr-white: #fff;
+    --clr-info-dark: #7d8da1;
+    --clr-info-light: #dce1eb;
+    --clr-dark: #363949;
+    --clr-warnig: #ff4edc;
+    --clr-light: rgba(132, 139, 200, 0.18);
+    --clr-primary-variant: #111e88;
+    --clr-dark-variant: #677483;
+    --clr-color-background: #f6f6f9;
+
+    --card-border-radius: 2rem;
+    --border-radius-1: 0.4rem;
+    --border-radius-2: 0.8rem;
+    --border-radius-3: 1.2rem;
+
+    --card-padding: 1.8rem;
+    --padding-1: 1.2rem;
+    --box-shadow: 0 2rem 3rem var(--clr-light);
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'poppins', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #008DDA;
+    padding: 20px 20px;
+    color: white;
+    /* margin-left: 0 */
+}
+
+.navbar-header h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.navbar-search input {
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+}
+
+.navbar-settings span {
+    padding: 5px 30px;
+    /* font-size: 16px; */
+    /* color: #333; */
+    color: white;
+    /* border: none; */
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.navbar-settings span:hover {
+    color: #504c4c
+}
+
+.navbar-settings button:hover {
+    background-color: #ddd;
+}
+
+
+/* container section starts here */
+.container {
+    /* display: grid; */
+    /* margin-top: 2rem; */
+    /* padding: right 30px;
+    padding-left: 30px; */
+    /* background-color: blueviolet; */
+    /* background: none; */
+    
+    height: 80vh;
+    align-items: center;
+    /* background-image: url(pexels-photo-912364.webp); */
+    background-repeat: no-repeat;
+    justify-content: center;
+    max-width: 100%;
+
+}
+
+.container>.info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Example of 3 equal columns */
+    background-color: red;
+    margin-top: 2.5rem;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    height: 40vh;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    background: none;
+    gap: 2rem; /* This sets a 20px gap between columns and rows */
+    /* background: none; */
+
+}
+
+ .block1, .block2, .block3{
+    /* height: fit-content; */
+    /* background-color: aqua; */
+    /* display: grid; */
+    /* gap: 30px; */
+    border: 2px solid red;
+    height: 350px;
+    width: 600px;
+    border-radius: 25px;
+    box-shadow: var(--box-shadow);
+    /* align-items: center; */
+}
+.block1:hover{
+    box-shadow: none;
+
+}
+
+.block2:hover{
+    box-shadow: none;
+}
+.block3:hover{
+    box-shadow: none;
+}
+
+
+#UNITS{
+    font-size: 3.5rem;
+    margin-left: 25px;
+    margin-left: 25px;
+}
+#UNITS2{
+    font-size: 3.5rem;
+    margin-left: 25px;
+    margin-left: 25px;
+}
+#Addi-info, #last, #Condition, #Location, #Time, #Temprature{
+    margin-top: 5px;
+    margin-left: 25px;
+    margin-right: 25px;
+    font-size: 16px;
+}
+#last, #Condition, #Location, #Time, #Temprature{
+    margin-top: 5px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+/* #Condition{
+    margin-top: 5px;
+    margin-left: 25px;
+    margin-right: 25px;  
+} */
+#time{
+    margin-top: 5px;
+    font-size: .75rem;
+    margin-left: 25px;
+    margin-right: 25px;
+    font-style: italic;
+    font-weight: 400;
+}
+#Temprature, #Wind, #Perciption{
+    margin-top: 20px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+/* container section ends here   */
+/* background video test */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+.block1 {
+    position: relative;
+    /* width: 600%; */
+    /* height: 100vh; Adjust height as needed */
+    overflow: hidden;
+    color: white; /* Ensure content is visible against video */
+}
+
+.video-background {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+/* .content {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    text-align: center;
+} */
+
+
+
+.block3{
+    position: relative;
+    /* height: 299px; */
+    /* width: 600px; */
+    /* height: 100vh; Adjust height as needed */
+    overflow: hidden;
+    color: white; /* Ensure content is visible against video */
+}
+
+.video-background {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+
+/* .content {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    text-align: center;
+} */
+.block2 {
+    position: relative;
+    /* width: 600%; */
+    /* height: 100vh; Adjust height as needed */
+    overflow: hidden;
+    color: white; /* Ensure content is visible against video */
+}
+
+.video-background {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+/* section 2 starts here  */
+.chartContainer{
+    height: 300px; width: 100%; position: relative;
+}

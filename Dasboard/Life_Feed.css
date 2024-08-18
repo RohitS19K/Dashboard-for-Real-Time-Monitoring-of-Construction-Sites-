@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --clr-primary: #7380ec;
+    --clr-start: #ff7782;
+    --clr-success: #41f1b6;
+    --clr-white: #fff;
+    --clr-info-dark: #7d8da1;
+    --clr-info-light: #dce1eb;
+    --clr-dark: #363949;
+    --clr-warnig: #ff4edc;
+    --clr-light: rgba(132, 139, 200, 0.18);
+    --clr-primary-variant: #111e88;
+    --clr-dark-variant: #677483;
+    --clr-color-background: #f6f6f9;
+
+    --card-border-radius: 2rem;
+    --border-radius-1: 0.4rem;
+    --border-radius-2: 0.8rem;
+    --border-radius-3: 1.2rem;
+
+    --card-padding: 1.8rem;
+    --padding-1: 1.2rem;
+    --box-shadow: 0 2rem 3rem var(--clr-light);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'poppins', sans-serif;
+    background-color: var(--clr-color-background);
+    height: fit-content;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    /* font-family: Arial, sans-serif; */
+    background-color: #f4f4f4;
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #008DDA;
+    padding: 20px 20px;
+    color: white;
+    /* margin-left: 0 */
+}
+
+.navbar-header h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.top {
+    /* justify-content: center; */
+    /* margin-top: 2rem; */
+    height: 4rem;
+    line-height: 4rem;
+    text-align: center;
+    background-color: var(--clr-dark-variant);
+    /* border-radius: 10px; */
+}
+
+.media-box {
+    /* margin-top: 2rem; */
+    height: 600px;
+    width: 720px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#camera {
+
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+
+    /* margin-top: 4rem; */
+    /* margin-left: 2rem; */
+}
+video #camera{
+    border-radius: 10px;
+}
+
+
+.sections {
+    display: flex;
+    gap: 2rem;
+}
+
+.left-section {
+    background-color: rgb(56, 139, 216);
+    display: grid;
+    height: 45rem;
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: var(--clr-white);
+    box-shadow: var(--box-shadow);
+    margin-top: 1rem;
+    margin-left: 15px;
+}
+
+.left-section:hover {
+    box-shadow: none;
+}
+
+
+.right-section {
+    background-color: var(--clr-color-background);
+    height: 45rem;
+    width: 33%;
+    /* border-radius: 1px solid grey; */
+    /* display: grid;  */
+    text-align: center;
+    justify-content: center;
+    margin-top: 10px;
+
+}
+.right-section #heading{
+    background-color: #B6FFFA;
+}
+
+#heading {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.view_port {
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* padding-right: 10px; */
+    justify-content: space-evenly;
+    text-align: center;
+    background-color: var(--clr-white);
+    border-radius: 10px;
+    padding: 0 0 10px 10px;
+    box-shadow: var(--box-shadow);
+
+}
+
+.view_port:hover {
+    box-shadow: none;
+}
+
+.cameras {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: .3rem;
+    align-items: center;
+    justify-items: center;
+    padding-left: 30px;
+}
+
+
+.cam1 {
+    height: 8rem;
+    width: 8rem;
+    border-radius: 10px;
+    border: 1px solid black;
+    /* margin-left: 30px; */
+
+}
+
+.cam2 {
+    height: 8rem;
+    width: 8rem;
+    border-radius: 10px;
+    border: 1px solid black;
+    /* margin-left: 30px; */
+}
+
+.cam3 {
+    height: 8rem;
+    width: 8rem;
+    border-radius: 10px;
+    border: 1px solid black;
+    /* margin-left: 30px; */
+}
+
+.cam4 {
+    height: 8rem;
+    width: 8rem;
+    border-radius: 10px;
+    border: 1px solid black;
+    /* margin-left: 30px; */
+}
+
+.cam5 {
+    height: 8rem;
+    width: 8rem;
+    border-radius: 10px;
+    border: 1px solid black;
+    /* margin-left: 30px; */
+}
+
+.cam6 {
+    height: 8rem;
+    width: 8rem;
+    border-radius: 10px;
+    border: 1px solid black;
+    /* margin-left: 30px; */
+}
+
+#show-camera {
+    height: 60px;
+    width: 150px;
+}
+
+button {
+    height: 45px;
+    width: 70px;
+    justify-self: center;
+    /* margin-left: 10px; */
+    background-color: #711DB0;
+    border-radius: 10px;
+    font-size: 18px;
+    font-family: 'poppins', sans-serif;
+    color: white;
+
+
+}
